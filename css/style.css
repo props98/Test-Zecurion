@@ -217,6 +217,7 @@ button, input {
   font-size: 1.4rem;
   color: #058DC7;
   line-height: 120%;
+  cursor: pointer;
 }
 
 .aside-crew__name--eyes {
