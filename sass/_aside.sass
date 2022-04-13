@@ -1,0 +1,78 @@
+.aside
+    &__wrap
+        // width: 34rem
+        height: 100vh
+        background: #fff
+    &__search
+        height: 2.3rem
+        background: $colorLightGrey
+        padding-left: 2.5rem
+    &__input
+        width: 100%
+        padding: .4rem 0 .4rem 2rem
+        background: $colorLightGrey url(../img/search-icon.svg)
+        background-repeat: no-repeat
+        background-position: left center
+        font-size: 1.3rem
+        color: $colorGreyDark
+    &-crew
+        &--active
+
+        &__wrap
+            display: flex
+            align-items: center
+            width: 100%
+            padding: 2.1rem 2.7rem 2rem 2rem
+            background: $colorGrey
+            opacity: 75%
+            &--active
+                opacity: 100%
+                background: $colorWhite
+        &__avatar
+            width: 5.7rem
+            height: 5.7rem
+            border-radius: 50%
+            background: url(../img/belayeva.png)
+            background-size: cover
+            background-position: 50% 60%
+            background-repeat: no-repeat
+            margin-right: 1.2rem
+            margin-top: -1rem
+        &__user
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            margin-right: 4.5rem
+        &__name
+            margin-bottom: 0.3rem
+            font-size: 1.4rem
+            color: $colorBlue
+            line-height: 120%
+            &--eyes
+                position: relative
+                padding-right: 1.7rem
+                &:before
+                    content: url(../img/eyes-icon.svg)
+                    width: 1.3rem
+                    height: 0.9rem
+                    position: absolute
+                    top: 0
+                    right: 0
+        &__post
+            font-size: 1.2rem
+            color: $colorGreyDark
+            margin-bottom: 0.5rem
+        &__widget
+            display: block
+            background: $colorWidgetTiff
+            color: $colorWhite
+            padding: .3rem .7rem
+            font-size: 1rem
+            border-radius: 0.2rem
+            &--fired
+                background-color: $colorRed
+        &__rating
+            font-size: 3rem
+            color: $colorGreyText
+            &--active
+                color: $colorRed

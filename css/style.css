@@ -135,5 +135,130 @@ button, input {
 
 .crumbs__employee {
   font-size: 1.3rem;
+  color: #707478;
+}
+
+.main {
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.aside__wrap {
+  height: 100vh;
+  background: #fff;
+}
+
+.aside__search {
+  height: 2.3rem;
+  background: #F9F8F6;
+  padding-left: 2.5rem;
+}
+
+.aside__input {
+  width: 100%;
+  padding: .4rem 0 .4rem 2rem;
+  background: #F9F8F6 url(../img/search-icon.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  font-size: 1.3rem;
+  color: #707478;
+}
+
+.aside-crew__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 2.1rem 2.7rem 2rem 2rem;
+  background: #F3F2ED;
+  opacity: 75%;
+}
+
+.aside-crew__wrap--active {
+  opacity: 100%;
+  background: #fff;
+}
+
+.aside-crew__avatar {
+  width: 5.7rem;
+  height: 5.7rem;
+  border-radius: 50%;
+  background: url(../img/belayeva.png);
+  background-size: cover;
+  background-position: 50% 60%;
+  background-repeat: no-repeat;
+  margin-right: 1.2rem;
+  margin-top: -1rem;
+}
+
+.aside-crew__user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 4.5rem;
+}
+
+.aside-crew__name {
+  margin-bottom: 0.3rem;
+  font-size: 1.4rem;
+  color: #058DC7;
+  line-height: 120%;
+}
+
+.aside-crew__name--eyes {
+  position: relative;
+  padding-right: 1.7rem;
+}
+
+.aside-crew__name--eyes:before {
+  content: url(../img/eyes-icon.svg);
+  width: 1.3rem;
+  height: 0.9rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.aside-crew__post {
+  font-size: 1.2rem;
+  color: #707478;
+  margin-bottom: 0.5rem;
+}
+
+.aside-crew__widget {
+  display: block;
+  background: #2DD0C6;
+  color: #fff;
+  padding: .3rem .7rem;
+  font-size: 1rem;
+  border-radius: 0.2rem;
+}
+
+.aside-crew__widget--fired {
+  background-color: #EE144E;
+}
+
+.aside-crew__rating {
+  font-size: 3rem;
+  color: #A2A2A2;
+}
+
+.aside-crew__rating--active {
+  color: #EE144E;
 }
 /*# sourceMappingURL=style.css.map */
