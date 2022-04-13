@@ -1,0 +1,22 @@
+.crumbs
+    background: $colorGrey
+    display: flex
+    &__wrap
+        padding: 1.8rem 2.5rem 1.8rem 2.5rem
+    &__title
+        position: relative
+        color: $colorBlue
+        font-size: 1.3rem
+        padding-right: 1.6rem
+        &:before
+            content: ""
+            position: absolute
+            top: 50%
+            right: .6rem
+            width: 0.8rem
+            height: 0.8rem
+            border-right: .2rem solid $colorGreyDark
+            border-top: .2rem solid $colorGreyDark
+            transform: translateY(-50%) rotate(45deg)
+    &__employee
+        font-size: 1.3rem
