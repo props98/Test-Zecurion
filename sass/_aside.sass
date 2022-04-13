@@ -1,8 +1,8 @@
 .aside
     &__wrap
-        // width: 34rem
         height: 100vh
         background: #fff
+        border-right: .1rem solid $colorGreyLine
     &__search
         height: 2.3rem
         background: $colorLightGrey
@@ -16,28 +16,23 @@
         font-size: 1.3rem
         color: $colorGreyDark
     &-crew
-        &--active
-
         &__wrap
             display: flex
             align-items: center
             width: 100%
             padding: 2.1rem 2.7rem 2rem 2rem
             background: $colorGrey
-            opacity: 75%
+            opacity: 70%
             &--active
                 opacity: 100%
                 background: $colorWhite
         &__avatar
             width: 5.7rem
             height: 5.7rem
-            border-radius: 50%
-            background: url(../img/belayeva.png)
-            background-size: cover
-            background-position: 50% 60%
-            background-repeat: no-repeat
             margin-right: 1.2rem
             margin-top: -1rem
+        &__avatar-img
+            border-radius: 50%
         &__user
             display: flex
             flex-direction: column

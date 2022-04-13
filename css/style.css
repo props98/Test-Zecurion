@@ -10,7 +10,7 @@
 
 html, body {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   color: #000;
 }
@@ -139,7 +139,6 @@ button, input {
 }
 
 .main {
-  background: yellow;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,6 +150,7 @@ button, input {
 .aside__wrap {
   height: 100vh;
   background: #fff;
+  border-right: 0.1rem solid #E4E4E4;
 }
 
 .aside__search {
@@ -179,7 +179,7 @@ button, input {
   width: 100%;
   padding: 2.1rem 2.7rem 2rem 2rem;
   background: #F3F2ED;
-  opacity: 75%;
+  opacity: 70%;
 }
 
 .aside-crew__wrap--active {
@@ -190,13 +190,12 @@ button, input {
 .aside-crew__avatar {
   width: 5.7rem;
   height: 5.7rem;
-  border-radius: 50%;
-  background: url(../img/belayeva.png);
-  background-size: cover;
-  background-position: 50% 60%;
-  background-repeat: no-repeat;
   margin-right: 1.2rem;
   margin-top: -1rem;
+}
+
+.aside-crew__avatar-img {
+  border-radius: 50%;
 }
 
 .aside-crew__user {
