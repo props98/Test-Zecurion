@@ -530,6 +530,15 @@ button, input {
   margin: 0;
 }
 
+@media (max-width: 141.9rem) {
+  .anomaly__item:not(:last-child) {
+    margin-right: 0;
+  }
+  .anomaly__item:first-child {
+    margin-right: 2.1rem;
+  }
+}
+
 .indicators__wrap {
   padding: 0 3.8rem;
 }
