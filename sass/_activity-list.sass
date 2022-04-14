@@ -1,0 +1,42 @@
+.activity-list
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &__item
+        &:not(:last-child)
+            padding-right: 4rem
+        &:not(:first-child)
+            padding-left: 4rem
+            border-left: .2rem solid $colorGreyLine
+    &__title
+        font-size: 1.2rem
+        font-weight: normal
+        color: $colorGreyDark
+        margin-bottom: 0.9rem
+    &__result
+        font-size: 2rem
+    &__sub
+        position: relative
+        bottom: 0
+        font-size: 1rem
+        margin-left: 0.5rem
+        color: $colorBlack
+        &--negative
+            position: relative
+            &::before
+                content: ""
+                position: absolute
+                top: -50%
+                border-left: .4rem solid  transparent
+                border-right: .4rem solid  transparent
+                border-top: .5rem solid $colorRed
+        &--red
+            color: $colorRed
+        &--positive
+            &::before
+                content: ""
+                position: absolute
+                top: -50%
+                border-left: .4rem solid  transparent
+                border-right: .4rem solid  transparent
+                border-bottom: .5rem solid $colorGreen

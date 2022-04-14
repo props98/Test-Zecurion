@@ -1,0 +1,22 @@
+.user-activity
+    flex-grow: 1
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__time
+        font-size: 1.2rem
+        color: $colorGreyText
+        &--bold
+            color: $colorGreyDark
+    &__link
+        position: relative
+        padding-left: 2rem
+        font-size: 1.2rem
+        color: $colorBlue
+        &::before
+            content: url(../img/svg/arrow-left.svg)
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
