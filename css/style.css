@@ -530,9 +530,12 @@ button, input {
   margin: 0;
 }
 
-@media (max-width: 144.9rem) {
+@media (max-width: 141.9rem) {
   .anomaly__item:not(:last-child) {
     margin-right: 0;
+  }
+  .anomaly__item:first-child {
+    margin-right: 2.1rem;
   }
 }
 
