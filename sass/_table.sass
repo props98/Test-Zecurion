@@ -1,24 +1,27 @@
 .table
-    width: 100%
+    min-width: 37rem
     border-collapse: collapse
     &__row
         border-bottom: .1rem solid $colorGreyLine
+    &__cell
+        &--truncate
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
     &__cell-header
         font-size: 1.4rem
+        font-weight: 400
         color: $colorGreyText
         padding-bottom: 0.5rem
         text-align: left
-        &:not(:first-child)
-            padding-left: 1.5rem
         &--center
             text-align: center
         &--right
             text-align: right
-        &--width
-            min-width: 3rem
     &__cell-sub
         font-size: 1rem
         color: $colorGreen
+        padding-left: 1rem
         &--red
             color: $colorRed
     &__cell-body
@@ -27,6 +30,8 @@
         font-weight: 100
         padding: .5rem 0 .5rem 1.8rem
         text-align: left
+        &--width
+            width: 5.5rem
         &--left-indent
             &:first-child
                 padding-left: 0
@@ -51,3 +56,7 @@
         &--green
             background: $colorGreenLight
         
+
+@media (max-width: 118.5rem)
+    .table
+        width: 100%

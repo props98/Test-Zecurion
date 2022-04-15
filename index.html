@@ -21,6 +21,7 @@
             </button>
         </div>
     </header>
+    <h1 class="visually-hidden ">Zecurion | Защита информации от внутренних угроз</h1>
     <section class="crumbs">
         <div class="crumbs__wrap">
             <div class="crumbs">
@@ -151,7 +152,7 @@
                 </div>
                 <div class="statistics">
                     <div class="statistics__wrap">
-                        <div class="apps-categories">
+                        <div class="statistics__apps">
                             <h3 class="statistics__title">Приложения и категории</h3>
                             <table class="table">
                                 <thead class="table__header">
@@ -187,7 +188,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="sites-categories">
+                        <div class="statistics__categories">
                             <h3 class="statistics__title">Сайты и категории</h3>
                             <table class="table">
                                 <thead class="table__header">
@@ -200,22 +201,28 @@
                                 </thead>
                                 <tbody class="table__tbody">
                                     <tr class="table__row table__row-body">
-                                        <td class="table__cell table__cell-body">
-                                            <span class="table__cell table__cell-square table__cell-square--yellow"></span>Поисковики</td>
+                                        <td class="table__cell table__cell-body table__cell--truncate">
+                                            <span class="table__cell table__cell-square table__cell-square--yellow"></span>
+                                            <span>Поисковики</span>
+                                        </td>
                                         <td class="table__cell table__cell-body table__cell-body--right table__cell-body--time-color">20:55</td>
                                         <td class="table__cell table__cell-body table__cell-body--right">18</td>
                                         <td class="table__cell table__cell-body table__cell-body--right">+2%</td>
                                     </tr>
                                     <tr class="table__row table__row-body">
-                                        <td class="table__cell table__cell-body">
-                                            <span class="table__cell table__cell-square table__cell-square--green"></span>Новостные порталы</td>
+                                        <td class="table__cell table__cell-body table__cell--truncate">
+                                            <span class="table__cell table__cell-square table__cell-square--green"></span>
+                                            <span>Новостные порталы</span>
+                                            </td>
                                         <td class="table__cell table__cell-body table__cell-body--right table__cell-body--time-color">15:11</td>
                                         <td class="table__cell table__cell-body table__cell-body--right">12</td>
                                         <td class="table__cell table__cell-body table__cell-body--right">-3%</td>
                                     </tr>
                                     <tr class="table__row table__row-body">
-                                        <td class="table__cell table__cell-body">
-                                            <span class="table__cell table__cell-square table__cell-square--green"></span>Сайт с неопределенным наполнением</td>
+                                        <td class="table__cell table__cell-body table__cell--truncate">
+                                            <span class="table__cell table__cell-square table__cell-square--green"></span>
+                                            <span id="long-stroke">Сайт с неопределенным наполнением</span>
+                                        </td> 
                                         <td class="table__cell table__cell-body table__cell-body--right table__cell-body--time-color">13:11</td>
                                         <td class="table__cell table__cell-body table__cell-body--right">7</td>
                                         <td class="table__cell table__cell-body table__cell-body--right">0</td>
@@ -223,53 +230,44 @@
                                 </tbody>
                             </table>
                         </div>
-                        <div class="discipline">
+                        <div class="statistics__discipline">
                             <h3 class="statistics__title">Дисциплина</h3>
                             <table class="table">
                                 <thead class="table__header">
                                     <tr class="table__row table__row-header">
                                         <th class="table__cell table__cell-header">Дата</th>
-                                        <th class="table__cell table__cell-header table__cell-header--center table__cell-header--width">Приход <br> на работу</th>
-                                        <th class="table__cell table__cell-header table__cell-header--center table__cell-header--width">Уход <br> с работы</th>
-                                        <th class="table__cell table__cell-header table__cell-header--center table__cell-header--width">Время <br> на работе</th>
+                                        <th colspan="2" class="table__cell table__cell-header table__cell-header--center table__cell-header--width">Приход <br> на работу</th>
+                                        <th colspan="2" class="table__cell table__cell-header table__cell-header--center table__cell-header--width">Уход <br> с работы</th>
+                                        <th colspan="2" class="table__cell table__cell-header table__cell-header--center table__cell-header--width">Время <br> на работе</th>
                                     </tr>
                                 </thead>
                                 <tbody class="table__tbody">
                                     <tr class="table__row table__row-body">
                                         <td class="table__cell table__cell-body table__cell-body--left-indent">29.02</td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">08:46
-                                            <span class="table__cell table__cell-sub table__cell-sub--red">+16 мин</span>
-                                        </td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">08:46
-                                            <span class="table__cell table__cell-sub table__cell-sub--red">-3 мин</span>
-                                        </td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">09:06
-                                            <span class="table__cell table__cell-sub">+12 мин</span>
-                                        </td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">08:46</td>
+                                        <td class="table__cell table__cell-sub table__cell-sub--red">+16 мин</td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">08:46</td>
+                                        <td class="table__cell table__cell-sub table__cell-sub--red">-3 мин</td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">09:06</td>
+                                        <td class="table__cell table__cell-sub">+12 мин</td>
                                     </tr>
                                     <tr class="table__row table__row-body">
                                         <td class="table__cell table__cell-body table__cell-body--left-indent">28.02</td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">08:27
-                                            <span class="table__cell table__cell-sub">-3 мин</span>
-                                        </td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">08:27
-                                            <span class="table__cell table__cell-sub">-3 мин</span>
-                                        </td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">08:36
-                                            <span class="table__cell table__cell-sub table__cell-sub--red">-24 мин</span>
-                                        </td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">08:27</td>
+                                        <td class="table__cell table__cell-sub">-3 мин</td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">08:27</td>
+                                        <td class="table__cell table__cell-sub">-3 мин</td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">08:36</td>
+                                        <td class="table__cell table__cell-sub table__cell-sub--red">-24 мин</td>
                                     </tr>
                                     <tr class="table__row table__row-body">
                                         <td class="table__cell table__cell-body table__cell-body--left-indent">25.02</td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">08:42
-                                            <span class="table__cell table__cell-sub table__cell-sub--red">+12 мин</span>
-                                        </td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">08:42
-                                            <span class="table__cell table__cell-sub table__cell-sub--red">+12 мин</span>
-                                        </td>
-                                        <td class="table__cell table__cell-body table__cell-body--center">08:36
-                                            <span class="table__cell table__cell-sub table__cell-sub--red">-24 мин</span>
-                                        </td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">08:42</td>
+                                        <td class="table__cell table__cell-sub table__cell-sub--red">+12 мин</td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">08:42</td>
+                                        <td class="table__cell table__cell-sub table__cell-sub--red">+12 мин</td>
+                                        <td class="table__cell table__cell-body table__cell-body--right">08:36</td>
+                                        <td class="table__cell table__cell-sub table__cell-sub--red">-24 мин</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -279,5 +277,6 @@
             </section>
         </div>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
