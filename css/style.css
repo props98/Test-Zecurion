@@ -48,6 +48,20 @@ button, input {
   cursor: pointer;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -504,7 +518,7 @@ button, input {
           align-items: center;
   font-size: 1.4rem;
   font-weight: 100;
-  width: 32rem;
+  min-width: 32rem;
   min-height: 7.2rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -530,12 +544,24 @@ button, input {
   margin: 0;
 }
 
-@media (max-width: 141.8rem) {
-  .anomaly__item:not(:last-child) {
+@media (max-width: 166rem) {
+  .anomaly__item:not(:first-child) {
     margin-right: 0;
   }
-  .anomaly__item:first-child {
-    margin-right: 2.1rem;
+}
+
+@media (max-width: 131.9rem) {
+  .anomaly__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .anomaly__item:not(:last-child) {
+    margin-right: 0;
   }
 }
 
